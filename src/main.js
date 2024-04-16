@@ -18,22 +18,22 @@ function nextImage(){
 
 }
 
-const whatsApp = document.querySelector('.whatsappButton');
+// const whatsApp = document.querySelector('.whatsappButton');
 
-function whatsAppButton(){
+// function whatsAppButton(){
 
-    var phoneNumber = "65999358060";
-    var whatsappLink = "https://wa.me/" + phoneNumber;
+//     var phoneNumber = "65999358060";
+//     var whatsappLink = "https://wa.me/" + phoneNumber;
 
 
-    return
-}
-whatsAppButton(whatsApp);
+//     return
+// }
+// whatsAppButton(whatsApp);
 
-document.getElementById("whatsappButton").addEventListener("click", function() {
-    var phoneNumber = "65999358060";
+// document.getElementById("whatsappButton").addEventListener("click", function() {
+//     var phoneNumber = "65999358060";
     
-    var whatsappLink = "https://wa.me/" + phoneNumber;
+//     var whatsappLink = "https://wa.me/" + phoneNumber;
     
-    window.location.href = whatsappLink;
-});
+//     window.location.href = whatsappLink;
+// });

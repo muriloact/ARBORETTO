@@ -1,284 +1,312 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* display: block; */
     align-items: center;
     justify-content: flex-start;
     font-family: 'Forma DJR Banner', sans-serif;
     display: inline-block;
 }
 
-@media(max-width:320px){
-
+@media(min-width:375px){
     .slider {
-        margin: 0 auto;
-        width: 320px; /* Alterado para 320px */
-        height: 133.33px; /* Proporcionalmente ajustado para manter a relação de aspecto */
+        margin: auto;
+        width: 375px;       
+        height: 213px;      
         overflow: hidden;
     }
-    
+    .slides input {
+        display: none;
+    }
     .slides {
-        width: 400%; /* Mantido */
-        height: 133.33px; /* Proporcionalmente ajustado */
+        width: 400%;   
+        height: 213px; 
         display: flex;
     }
-    
     .slide {
-        width: 25%; /* Mantido */
+        width: 25%; 
     }
-    
     .slide img {
-        width: 320px; /* Alterado para 320px */
-        height: 133.33px; /* Proporcionalmente ajustado */
+        width: 375px; 
+        height: 213px;
     }
-    
     .information h1 {
-        margin-top: 80px; /* Ajustado para a nova resolução */
+        margin-top: 15%;    
         text-align: left;
-        margin-left: 20px; /* Ajustado para a nova resolução */
-        font-size: 25px; /* Ajustado para a nova resolução */
+        margin-left: 15%;   
+        font-size: 16px;
+        line-height: 1.5em;
     }
-    
     .information h2 {
         color: darkgrey;
         text-align: left;
-        margin-left: 20px; /* Ajustado para a nova resolução */
-        font-size: 20px; /* Ajustado para a nova resolução */
+        margin-left: 15%; 
+        font-size: 14px; 
+        line-height: 1.5em;
     }
-    
-    /* Restante do CSS omitido para brevidade */
     .quadradosorganizados {
-        margin-top: 5%; /* Ajustado para a nova resolução */
-        width: 100%;
-        height: auto; /* Removido, pois a altura será determinada pelo conteúdo */
+        margin-top: 10%; 
+        margin-bottom: 10%; 
+        width: auto;
+        height: auto; 
         display: inline-block;
         text-align: center;
     }
-    
     .doisquadrados,
     .outrosdoisquadrados {
         display: inline-flex;
-        margin: 5px; /* Ajustado para a nova resolução */
+        margin-left: 0;
     }
-    
     .estudioimg,
     .producaoimg,
-    .imglavabo {
-        width: 152px; /* Ajustado para a nova resolução */
-        height: 152px; /* Ajustado para a nova resolução */
+    .imglavabo,
+    .reuniaoimg {
+        text-align: center;
+        width: 136px;      
+        height: 136px;     
         display: block;
-        margin-right: 5px; /* Ajustado para a nova resolução */
+        margin-right: 5px; 
+        border-radius: 5px ;
     }
-    
+    .estudioimg img,
+    .producaoimg img,
+    .imglavabo img,
+    .saladereuniao img{
+        width: 136px; 
+        height: 136px;
+        border-radius: 5px;
+    }
     .estudio label,
     .saladereuniao label,
     .saladeproducao label,
     .lavabo label {
-        font-size: 20px; /* Ajustado para a nova resolução */
-        text-align: left;
-        margin-top: 50px; /* Ajustado para a nova resolução */
-    }
-    
-    .textostudioarboretto {
-        margin-left: 5%; /* Ajustado para a nova resolução */
-        margin-right: 5%; /* Ajustado para a nova resolução */
-        margin-top: 10%; /* Ajustado para a nova resolução */
-    }
-    
-    .infoestudioarbo h1 {
         text-align: center;
-        margin-left: 1%; /* Ajustado para a nova resolução */
-        margin-bottom: 3%; /* Ajustado para a nova resolução */
+        font-size: 12px; 
+        text-align: left;
+        margin-top: 15%;
     }
-    
+    .textimgarbo {
+        text-align: center;
+        width: 375px;
+    }
+    .infoestudioarbo h1 {
+        text-align: left;
+        margin-left: 1%;
+        margin-top: 55%;
+        font-size: 15px; 
+    }
     .infoestudioarbo label {
-        margin-top: 10%; /* Ajustado para a nova resolução */
-        font-size: 20px; /* Ajustado para a nova resolução */
+        margin-top: 10%;
+        margin-left: 5%;
+        text-align: left;
+        font-size: 15px; 
     }
-    
     .imginfoarbo {
         text-align: right;
-        margin-top: 10%; /* Ajustado para a nova resolução */
-        width: 213px; /* Ajustado para a nova resolução */
-        height: 178px; /* Ajustado para a nova resolução */
+        margin-top: 10%;   
+        width: 375px;      
+        height: 178px;     
     }
-    
-    /* Restante do CSS omitido para brevidade */
-    .filmagem,
-.fotografia,
-.reunioescomerciais {
-    background-size: cover;
-    background-position: center;
-    width: 320px; /* Ajustado para a nova resolução */
-    height: 274.33px; /* Proporcionalmente ajustado */
-    display: block;
+    .imginfoarbo img{
+        text-align: right;
+        margin-top: 10%;        
+        width: 375px;           
+        height: 275px;          
+    }
+    .filmagem {
+        margin-top: 15%;
+        width: 374.8px;
+        height: 360px;
+        background-image: url(../img/FILMAGEMTAMANHOM.png);
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .filmagem label{
+        font-size: 15px; 
+        color: white;
+        /* margin: 10px;  */
+        line-height: 1.5em;
+    }
+    .filmagem h2{
+        font-size: 20px; 
+        margin-left: 32%;
+        color: white;
+        margin-top: 15%; 
+    }
+    .fotografia{
+        /* margin-top: 15%; */
+        width: 374.8px;
+        height: 360px;
+        background-image: url(../img/FOTOGRAFIATAMANHOM.png);
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .fotografia label{
+        font-size: 14px; 
+        color: white;
+        margin: 5px; 
+        line-height: 1.5em;
+    }
+    .fotografia h2{
+        font-size: 15px; 
+        margin-left: 32%;
+        color: white;
+        margin-top: 5%; 
+    }
+    .reunioescomerciais {
+    width: 374.8px;
+    height: 360px;
+    background-image: url(../img/REUNIAOCOMERCIALTAMANHOM.png);
+    background-repeat: no-repeat;
     text-align: center;
-}
-
-.filmagem label,
-.fotografia label,
-.reunioescomerciais label {
-    font-size: 20px; /* Ajustado para a nova resolução */
+    font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .reunioescomerciais label {
+    font-size: 14px; 
     color: white;
-    margin: 15px; /* Ajustado para a nova resolução */
+    margin: 10px; 
     line-height: 1.5em;
-}
-
-.filmagem h2,
-.fotografia h2,
-.reunioescomerciais h2 {
-    font-size: 25px; /* Ajustado para a nova resolução */
-    margin-left: 32%; /* Ajustado para a nova resolução */
+    }
+    .reunioescomerciais h2 {
+    font-size: 20px; 
+    margin-left: 20%;
     color: white;
-    margin-top: 15%; /* Ajustado para a nova resolução */
-}
-
-.filmagem button,
-.fotografia button,
-.reunioescomerciais button {
+    margin-top: 15%; 
+    }
+    .filmagem button,
+    .fotografia button,
+    .reunioescomerciais button {
     background: none;
     height: 50px;
-    width: 250px;
+    width: 180px;
     border-radius: 25px;
     border-color: white;
     font-size: 20px;
-    margin-top: 20%; /* Ajustado para a nova resolução */
+    margin-top: 3%; /* Ajustado para a nova resolução */
     color: white;
-    font-size: 25px;
-}
-
-.sobreestudio,
-.sobresalareuniao {
+    font-size: 15px;
+    }
+    .sobreestudio,
+    .sobresalareuniao {
     display: block;
     margin-bottom: 5%;
     margin-top: 15%;
-    margin-left: 5%; /* Ajustado para a nova resolução */
-    font-size: 20px; /* Ajustado para a nova resolução */
+    margin-left: 5%; 
+    font-size: 16px; 
     color: darkgrey;
     line-height: 1.5em;
-}
-
-.sobreestudio h2,
-.sobresalareuniao h2 {
-    font-size: 25px; /* Ajustado para a nova resolução */
+    font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .sobreestudio h2,
+    .sobresalareuniao h2 {
+    text-align: left;
+    font-size: 20px; 
     color: black;
-}
-
-.sobreestudio button,
-.sobresalareuniao button {
+    }
+    .sobreestudio button,
+    .sobresalareuniao button {
     background: none;
     height: 50px;
-    width: 280px;
+    width: 180px;
     border-radius: 25px;
     border-color: black;
-    font-size: 20px;
+    font-size: 15px;
     color: darkgrey;
-    font-size: 25px;
-    margin-top: 5%; /* Ajustado para a nova resolução */
-}
-
-/* Restante do CSS omitido para brevidade */
-
-.especificacaoestudio {
+    font-size: 16px;
+    margin-left: 5%;
+    margin-top: 5%; 
+    }
+    .especificacaoestudio {
     line-height: 1.5em;
-    margin-left: 5%; /* Ajustado para a nova resolução */
-}
-
-.especificacaoestudio li {
-    line-height: 2em; /* Ajustado para a nova resolução */
-    font-size: 18px; /* Ajustado para a nova resolução */
-}
-
-.especificacaoestudio h2 {
-    margin-left: 0%; /* Ajustado para a nova resolução */
+    margin-left: 5%; 
+    }
+    .especificacaoestudio li {
+    line-height: 2em;
+    font-size: 16px; 
+    }
+    .especificacaoestudio h2 {
+    margin-top: 25%;
+    margin-left: 0%; 
     color: black;
-    font-size: 25px; /* Ajustado para a nova resolução */
-}
-
-.agendamentocombotao {
+    font-size: 20px;
+    }
+    .agendamentocombotao {
     background-size: cover;
-    width: 320px; /* Ajustado para a nova resolução */
-    height: 273.67px; /* Proporcionalmente ajustado */
+    background-image: url(../img/facaseuagendamento.png);
+    width: 375px; 
+    height: 362px;
     text-align: left;
-}
-
-.agendamentocombotao button {
-    margin-top: 10%; /* Ajustado para a nova resolução */
-    margin-left: 5%; /* Ajustado para a nova resolução */
+    }
+    .agendamentocombotao button {
+    margin-top: 10%;
+    margin-left: 5%; 
     background-color: #E5C167;
     border: none;
-    font-size: 18px; /* Ajustado para a nova resolução */
+    font-size: 18px;
     width: 250px;
-    height: 70px; /* Ajustado para a nova resolução */
-    border-radius: 35px; /* Ajustado para a nova resolução */
+    height: 45px; 
+    border-radius: 35px; 
     font-family: 'Forma DJR Banner', sans-serif;
     color: white;
-}
-
-.agendamentocombotao h1 {
+    }
+    .agendamentocombotao h1 {
     color: white;
     margin-left: 5%; /* Ajustado para a nova resolução */
     margin-top: 15%; /* Ajustado para a nova resolução */
-    font-size: 35px; /* Ajustado para a nova resolução */
+    font-size: 25px; /* Ajustado para a nova resolução */
     line-height: 1.5em;
     font-family: 'Forma DJR Banner', sans-serif;
-}
-
-.final {
+    }
+    .final {
     display: flex;
     color: black;
-}
-
-.final h2 {
+    }
+    .final h2 {
+    font-size: 15px;
     color: black;
-}
-
-.agendamento {
+    }
+    .agendamento {
     display: block;
-    text-align: center;
-}
-
-.agendamento label {
-    margin-left: 15%; /* Ajustado para a nova resolução */
-    font-size: 20px; /* Ajustado para a nova resolução */
-}
-
-.endeco {
+    text-align: left;
+    }
+    .agendamento label {
+    margin-left:0; 
+    font-size: 10px;  
+    }
+    .endeco {
     margin-right: 5%; /* Ajustado para a nova resolução */
-}
-
-.endeco h1 {
-    text-align: center;
-}
-
-.endeco label {
+    }
+    .endeco h1 {
+    text-align: right;
+    }
+    .endeco label {
     text-decoration: none;
     text-align: left;
     color: black;
-    font-size: 20px; /* Ajustado para a nova resolução */
-    margin-left: 10%; /* Ajustado para a nova resolução */
+    font-size: 10px; 
+    margin-left: 10%;
     display: block;
-}
-
-.logos {
+    }
+    .logos {
     display: block;
-}
-
-.logos img {
-    margin-left: 2.5%; /* Ajustado para a nova resolução */
-    margin-top: 2.5%; /* Ajustado para a nova resolução */
-    margin-bottom: 0.5%; /* Ajustado para a nova resolução */
-}
-
-.caixabtn {
+    }
+    .paradesktop{
+        display: none;
+    }
+    .logos img {
+    margin-left: 2.5%;  
+    margin-top: 2.5%;   
+    margin-bottom: 0.5%;
+    }
+    .caixabtn {
     position: absolute;
-    left: 85%; /* Ajustado para a nova resolução */
-    bottom: 150px; /* Mantido */
-}
-
-.caixabtn button {
+    right: 50px;         
+    bottom: 60px;     
+    }
+    .caixabtn button {
     position: fixed;
     border-radius: 24px; /* Ajustado para a nova resolução */
     background-image: url(../img/IconeWhatsApp.png);
@@ -287,1719 +315,631 @@ body {
     text-decoration: none;
     width: 48px; /* Mantido */
     height: 48px; /* Mantido */
-}
-
-
-}
-
-.slider {
-    margin: 0 auto;
-    width: 1440px;
-    height: 600px;
-    overflow: hidden;
-}
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-.slides input {
-    display: none;
-}
-.slide {
-    width: 25%;
-}
-.slide img {
-
-    width: 1440px;
-    height: 600px;
+    }
+    .arboretologo {
+            display: none;
+    }
     
+    .arboretologocelular {
+            position: absolute;
+    }
 }
-/*  desconciderar
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%; 
-    height: 100vh; 
-    display: block;
-    align-items: first baseline;
-    justify-content: flex-start;
-}
-.slider{
-    margin: 0 auto;
-    width: 320px;
-    height: 320px;
-    overflow: hidden;
-}
-.slides{
-    width: 320px;
-    height: auto;
-    display: flex;
-}
-.slides input{
-    display: none;
-}
-.slide{
-    width: 25%;
-    position: relative;
-}
-.slide img{
+@media(min-width:430px){
+    .slider {
+        margin: auto;
+        width: 430px;       
+        height: 250px;      
+        overflow: hidden;
+    }
+    .slides input {
+        display: none;
+    }
+    .slides {
+        width: 400%;   
+        height: 250px; 
+        display: flex;
+    }
+    .slide {
+        width: 25%; 
+    }
+    .slide img {
+        width: 430px; 
+        height: 250px;
+    }
+    .information h1 {
+        margin-top: 15%;    
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+    .information h2 {
+        color: darkgrey;
+        text-align: left;
+        margin-left: 15%; 
+        font-size: 20px; 
+        line-height: 1.5em;
+    }
+    .quadradosorganizados {
+        margin-top: 10%; 
+        margin-bottom: 10%; 
+        width: 430px;
+        height: 430px; 
+        display: inline-block;
+        text-align: center;
+    }
+    .doisquadrados,
+    .outrosdoisquadrados {
+        /* display: inline-block; */
+        margin-left: 0;
+    }
+    .estudioimg,
+    .producaoimg,
+    .imglavabo,
+    .reuniaoimg {
+        text-align: center;
+        width: 200px;      
+        height: 200px;     
+        /* display: block; */
+        margin-right: 5px; 
+    }
+    .estudioimg img,
+    .producaoimg img,
+    .imglavabo img,
+    .saladereuniao img{
+        width: 200px; 
+        height: 200px;
+    }
+    .estudio label,
+    .saladereuniao label,
+    .saladeproducao label,
+    .lavabo label {
+        text-align: center;
+        font-size: 20px; 
+        text-align: left;
+        margin-top: 15%;
+    }
+    .textimgarbo {
+        text-align: center;
+        font-size: 18px;
+        width: 430px;
+    }
+    .infoestudioarbo h1 {
+        text-align: left;
+        margin-left: 1%;
+        margin-top: 55%;
+        font-size: 18px; 
+    }
+    .infoestudioarbo label {
+        margin-top: 10%;
+        margin-left: 5%;
+        text-align: left;
+        font-size: 20px; 
+    }
+    .imginfoarbo {
+        text-align: right;
+        width: 430px;      
+        height:230px;     
+    }
+    .imginfoarbo img{
+        text-align: right;
+        /* margin-top: 10%;         */
+        width: 430px;           
+        height: 350px;          
+    }
+    .filmagem {
+        margin-top: 15%;
+        width: 430px;
+        height: 400px;
+        background-image: url(../img/FILMAGEMTAMANHOM.png);
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .filmagem label{
+        font-size: 15px; 
+        color: white;
+        /* margin: 10px; */
+        line-height: 0.5em;
+    }
+    .filmagem h2{
+        font-size: 20px; 
+        margin-left: 32%;
+        color: white;
+        margin-top: 8%; 
+    }
+    .fotografia{
+        /* margin-top: 15%; */
+        width: 430px;
+        height: 400px;
+        background-image: url(../img/FOTOGRAFIATAMANHOM.png);
+        background-repeat: no-repeat;
+        /* text-align: center; */
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .fotografia label{
+        font-size: 15px; 
+        color: white;
+        margin: 5px; 
+        line-height: 0.5em;
+    }
+    .fotografia h2{
+        font-size: 20px; 
+        margin-left: 32%;
+        color: white;
+        margin-top: 5%; 
+    }
+    .reunioescomerciais {
+    width: 430px;
+    height: 400px;
+    background-image: url(../img/REUNIAOCOMERCIALTAMANHOM.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Forma DJR Deck' sans-serif;
     object-fit: cover;
-    width: 320px;
-    height: 320px;
-}
-*/
-
-#radio1:checked~.first {
-    margin-left: 0;
-    transition: 1s;
-}
-#radio2:checked~.first {
-    margin-left: -25%;
-    transition: 1s;
-}
-#radio3:checked~.first {
-    margin-left: -50%;
-    transition: 1s;
-}
-#radio4:checked~.first {
-    margin-left: -75%;
-    transition: 1s;
-}
-#radio5:checked~.first {
-    margin-left: -100%;
-    transition: 1s;
-}
-#radio6:checked~.first {
-    margin-left: -125%;
-    transition: 1s;
-}
-#radio7:checked~.first {
-    margin-left: -150%;
-    transition: 1s;
-}
-#radio8:checked~.first {
-    margin-left: -175%;
-    transition: 1s;
-}
-.arboretologo {
-    position: absolute;
-}
-.arboretologocelular {
-    display: none;
-}
-.information {
-    display: inline-block;
-    font-family: 'Forma DJR Banner', sans-serif;
-}
-.information h1 {
-    margin-top: 250px;
-    text-align: left;
-    margin-left: 250px;
-    font-size: 40px;
-}
-.information h2 {
-    color: darkgrey;
-    text-align: left;
-    margin-left: 250px;
-    font-size: 35px;
-}
-.quadradosorganizados {
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-}
-.doisquadrados {
-    display: inline-flex;
-    margin: 10px;
-}
-.outrosdoisquadrados {
-    display: inline-flex;
-    margin: 10px;
-}
-.estudioimg {
-    width: 505px;
-    height: 505px;
-    display: block;
-    margin-right: 15px;
-}
-.estudio label {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 100px;
-}
-.reuniaoimg {
-    width: 505px;
-    height: 505px;
-    display: flex;
-}
-.saladereuniao label {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 100px;
-}
-.saladeproducao label {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 100px;
-}
-.producaoimg {
-    width: 505px;
-    height: 505px;
-    text-align: left;
-    display: block;
-    margin-right: 15px;
-}
-.imglavabo {
-    width: 505px;
-    height: 505px;
-    text-align: left;
-    display: block;
-    /* margin-left: 250px; */
-}
-.lavabo label {
-    font-size: 40px;
-    text-align: left;
-    margin-top: 100px;
-    /* margin-left: 425px; */
-}
-.textimgarbo {
-    display: flex;
-}
-.textostudioarboretto{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20%;
-}
-.infoestudioarbo h1 {
-    text-align: center;
-    margin-left: 2%;
-    margin-bottom: 5%;
-}
-.infoestudioarbo label {
-    margin-top: 20%;
-    font-size: 40px;
-}
-.imginfoarbo {
-    text-align: right;
-    margin-top: 17%;
-    width: 716px;
-    height: 600px;
-}
-.filmagem {
-    background-image: url(../img/FILMAGEMGRANDE.png);
-    width: 1440px;
-    height: 1229px;
-    display: block;
-    text-align: center;
-}
-.filmagem label {
-    font-size: 35px;
+    }
+    .reunioescomerciais label {
+    font-size: 16px; 
     color: white;
-    margin: 20px;
-    line-height: 1.5em;
-}
-.filmagem h2 {
-    font-size: 40px;
-    margin-left: 43%;
+    margin: 12px; 
+    line-height: 0.5em;
+    }
+    .reunioescomerciais h2 {
+    font-size: 20px; 
+    margin-left: 20%;
     color: white;
-    margin-top: 15%;
-}
-.filmagem button{
+    margin-top: 5%; 
+    }
+    .filmagem button,
+    .fotografia button,
+    .reunioescomerciais button {
     background: none;
-    height: 50px;
-    width: 250px;
+    height: 45px;
+    width: 180px;
     border-radius: 25px;
     border-color: white;
-    font-size: 20px;
-    margin-top: 23%;
+    margin-top: 6%; 
     color: white;
-    font-size: 25px;
-}
-.fotografia {
-    background-image: url(../img/FOTOGRAFIAGRANDE.png);
-    width: 1440px;
-    height: 1229px;
-    text-align: center;
-    display: block;
-
-}
-.fotografia label {
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    margin: 20px;
-    line-height: 1.5em;
-}
-.fotografia h2{
-    font-size: 40px;
-    margin-left: 42%;
-    color: white;
-    margin-top: 15%;
-}
-.fotografia button{
-    background: none;
-    height: 50px;
-    width: 250px;
-    border-radius: 25px;
-    border-color: white;
-    font-size: 20px;
-    margin-top: 10%;
-    color: white;
-    font-size: 25px;
-}
-.reunioescomerciais{
-    background-image: url(../img/REUNIAOGRANDE.png);
-    width: 1440px;
-    height: 1229px;
-    display: block;
-    text-align: center;
-}
-.reunioescomerciais label {
-    font-size: 35px;
-    color: white;
-    line-height: 1.5em;
-    margin-top: 15%;
-}
-.reunioescomerciais h2{
-    font-size: 40px;
-    margin-left: 35%;
-    color: white;
-    margin-top: 20%;
-}
-.reunioescomerciais button{
-    background: none;
-    height: 50px;
-    width: 250px;
-    border-radius: 25px;
-    border-color: white;
-    font-size: 20px;
-    margin-top: 15%;
-    color: white;
-    font-size: 25px;
-}
-.sobreestudio{
+    font-size: 15px;
+    }
+    .sobreestudio,
+    .sobresalareuniao {
     display: block;
     margin-bottom: 5%;
     margin-top: 15%;
-    margin-left: 10%;
-    font-size: 30px;
+    margin-left: 5%; 
+    font-size: 20px; 
     color: darkgrey;
     line-height: 1.5em;
-}
-.sobreestudio h2{
-    font-size: 40px;
+    font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .sobreestudio h2,
+    .sobresalareuniao h2 {
+    text-align: left;
+    font-size: 20px; 
     color: black;
-    margin-left: -0.70%;
-}
-.sobreestudio button{
+    }
+    .sobreestudio button,
+    .sobresalareuniao button {
     background: none;
     height: 50px;
-    width: 280px;
+    width: 200px;
     border-radius: 25px;
     border-color: black;
     font-size: 20px;
     color: darkgrey;
-    font-size: 25px;
-    margin-top: 5%;
-}
-.sobresalareuniao{
-    display: block;
-    margin-bottom: 5%;
-    margin-top: 15%;
-    margin-left: 10%;
-    font-size: 30px;
-    color: darkgrey;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 10%; 
+    }
+    .especificacaoestudio {
     line-height: 1.5em;
-}
-.sobresalareuniao h2{
-    font-size: 40px;
+    margin-left: 5%; 
+    }
+    .especificacaoestudio li {
+    line-height: 2em;
+    font-size: 20px; 
+    }
+    .especificacaoestudio h2 {
+    margin-top: 25%;
+    margin-left: 0%; 
     color: black;
-    margin-left: -0.70%;
-}
-.sobresalareuniao button{
-    background: none;
-    height: 50px;
-    width: 280px;
-    border-radius: 25px;
-    border-color: black;
-    font-size: 20px;
-    color: darkgrey;
-    font-size: 25px;
-    margin-top: 5%;
-}
-.especificacaoestudio{
-    line-height: 1em;
-    margin-left: 10%;
-}
-.especificacaoestudio li{
-    line-height: 2.5em;
-    font-size: 20px;
-}
-.especificacaoestudio h2{
-    margin-left: 0%;
-    color: black;
-    font-size: 40px;
-}
-.agendamentocombotao{
-    background-image: url(../img/facaseuagendamento.png);
-    width: 1440px;
-    height: 1220px;
-    text-align: left;
-}
-.agendamentocombotao button{
-    margin-top:10%;
-    margin-left: 10%;
+    font-size: 30px;
+    }
+    .agendamentocombotao {
+    background-size: cover;
+    background-image:url(../img/facaseuagendamento.png);
+    width: 430px; 
+    height: 362px;
+    /* text-align: left; */
+    }
+    .agendamentocombotao button {
+    margin-top: 9%;
+    margin-left: 5%; 
     background-color: #E5C167;
     border: none;
-    font-size:25px;
-    width: 400px;
-    height: 100px;
-    border-radius: 69px;
+    font-size: 18px;
+    width: 250px;
+    height: 45px; 
+    border-radius: 35px; 
     font-family: 'Forma DJR Banner', sans-serif;
     color: white;
-}
-.agendamentocombotao h1{
+    }
+    .agendamentocombotao h1 {
     color: white;
-    margin-left: 10%;
-    margin-top: 20%;
-    font-size: 60px;
+    margin-left: 5%; /* Ajustado para a nova resolução */
+    margin-top: 15%; /* Ajustado para a nova resolução */
+    font-size: 25px; /* Ajustado para a nova resolução */
     line-height: 1.5em;
     font-family: 'Forma DJR Banner', sans-serif;
-}
-.final{
+    }
+    .final {
     display: flex;
     color: black;
-}
-.final h2{
+    }
+    .final h2 {
+    font-size: 15px;
     color: black;
-}
-.agendamento{
+    }
+    .agendamento {
     display: block;
-    text-align: center;
-}
-.agendamento label{
-    margin-left:30%;
-    font-size: 25px;
-}
-.endeco{
-    margin-right:5% ;
-}
-.endeco h1{
-    text-align: center;
-}
-.endeco label{
+    text-align: left;
+    }
+    .agendamento label {
+    margin-left:0; 
+    font-size: 13px;  
+    }
+    .endeco {
+    margin-right: 5%; /* Ajustado para a nova resolução */
+    }
+    .endeco h1 {
+    text-align: right;
+    }
+    .endeco label {
     text-decoration: none;
     text-align: left;
     color: black;
-    font-size:25px;
-    margin-left: 20%;
-    display: block;
-}
-.logos{
-    display: block;
-}
-.logos img{
+    font-size: 13px; 
     margin-left: 5%;
-    margin-top: 3%;
-    margin-bottom: 1%;
-}
-.caixabtn{
+    display: block;
+    }
+    .logos {
+    display: block;
+    }
+    .logos img {
+    margin-left: 2.5%;  
+    margin-top: 2.5%;   
+    margin-bottom: 0.5%;
+    }
+    .paradesktop{
+        display: none;
+    }
+    .caixabtn {
     position: absolute;
-    left: 90%;
-    bottom: 10%;
-}
-.caixabtn button{
+    right: 50px;         
+    bottom: 60px;     
+    }
+    .caixabtn button {
     position: fixed;
-    border-radius: 48px;
+    border-radius: 24px; /* Ajustado para a nova resolução */
     background-image: url(../img/IconeWhatsApp.png);
     border: none;
-    text-decoration: none;
     object-fit: cover;
-    width: 48px;
-    height: 48px;
-}
-/* @media(min-width: 320px){
-    .slider{
-        margin: 0 auto;
-        width: 320px;
-        height: 200px;
-        overflow: hidden;
-    
+    text-decoration: none;
+    width: 48px; /* Mantido */
+    height: 48px; /* Mantido */
     }
-    .slides{
-        width: 400%;
-        height: 400px;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: relative;
-    }
-    
-    .slide img{
-        width: 320px;
-        height: 200px;
-    }
-    .arboretologo{
-        display: none;
-    }
-    .arboretologocelular{
-        position: absolute;
-    }
-
-    .imglavabo img{
-        height: 32px;
-        width: 32px;
-    }
-
-    .estudioimgimg img{
-        width: 42px;
-        height: 42px;
-    }
-
-} */
-
-/* @media(max-width: 1440px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1440px;
-        height: 320px;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: 720px;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        object-fit: cover;
-        width: 1140px;
-        height: 320px;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-    .arboretologocelular{
-        display: none;
-    }
-} */
-
-/*@media (min-width: 2559px) and (max-width: 2560px){
-
-    .slider{
-        margin: 0 auto;
-        width: 2560px;
-        height: 500px;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 2560px;
-        height: 500px;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-    .arboretologocelular{
-        display: none;
-    }
-}
-*/
-
-/*@media(min-width: 2046px) and (max-width: 2047px){
-
-    .slider{
-        margin: 0 auto;
-        width: 2047px;
-        height: 500px;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 2047px;
-        height: 600px;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-}
-*/
-/* @media(max-width: 2560px){
-
-    .slider{
-        margin: 0 auto;
-        width: 2560px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-    .arboretologocelular{
-        display: none;
-    }
-}
-@media(max-width: 2047px){
-
-    .slider{
-        margin: 0 auto;
-        width: 2047px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-}
-@media(max-width: 1920px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1920px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-@media(max-width: 1760px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1760px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-@media(max-width: 1680px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1680px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-@media(max-width: 1600px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1600px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-@media(max-width: 1440px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1440px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        position: absolute;
-    }
-    .arboretologocelular{
-        display: none;
-    }
-}
-
-@media(min-width: 1366px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1366px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-/*
-@media(min-width: 1280px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1280px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-
-@media(min-width: 1152px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1152px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-
-@media(min-width: 1128px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1128px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-}
-
-@media(max-width: 1024px){
-
-    .slider{
-        margin: 0 auto;
-        width: 1024px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: relative;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    }
-
-@media(min-width: 768px){
-
-    .slider{
-        margin: 0 auto;
-        width: 768px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    .arboretologo{
-        position: absolute;
-    }
-    .arboretologocelular{
-        display: none;
-    }
-}
-
-@media(max-width: 435px){
-    
-    .slider{
-        margin: 0 auto;
-        width: 435px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        display: none;
-    }
-    .arboretologocelular{
-        margin-left: 10%;
-        position: absolute;
-    }
-}
-
-@media(max-width: 425px){
-    
-    .slider{
-        margin: 0 auto;
-        width: 425px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        display: none;
-    }
-    .arboretologocelular{
-        margin-left: 10%;
-        position: absolute;
-    }
-}
-
-@media(max-width: 412px){
-    
-    .slider{
-        margin: 0 auto;
-        width: 412px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-    .arboretologo{
-        display: none;
-    }
-    .arboretologocelular{
-        margin-left: 10%;
-        position: absolute;
-    }
-}
-
-@media(max-width: 375px){
-    
-    .slider{
-        margin: 0 auto;
-        width: 375px;
-        height: auto;
-        overflow: hidden;
-    }
-    
-    .slides{
-        width: 400%;
-        height: auto;
-        display: flex;
-    }
-    
-    .slides input{
-        display: none;
-    }
-    
-    .slide{
-        width: 25%;
-        position: flex;
-    }
-    
-    .slide img{
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked ~ .first{
-        margin-left: 0;
-        transition: 1s;
-    }
-    
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-        transition: 1s;
-    }
-    
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-        transition: 1s;
-    }
-    
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    .arboretologo{
-        display: none;
-    }
-    .arboretologocelular{
-        margin-left: 10%;
-        position: absolute;
-    }
-
-}
-*/
-/*
-@media(max-width: 320px) {
-
-    .slider {
-        margin: 0 auto;
-        width: 320px;
-        height: auto;
-        overflow: hidden;
-    }
-
-    .slides {
-        width: 320px;
-        height: auto;
-        display: flex;
-    }
-
-    .slides input {
-        
-    }
-/*
-    .slide {
-        width: 25%;
-        position: flex;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #radio1:checked~.first {
-        margin-left: 0;
-        transition: 1s;
-    }
-
-    #radio2:checked~.first {
-        margin-left: -15%;
-        transition: 1s;
-    }
-
-    #radio3:checked~.first {
-        margin-left: -30%;
-        transition: 1s;
-    }
-
-    #radio4:checked~.first {
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    #radio5:checked~.first {
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    #radio6:checked~.first {
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    #radio7:checked~.first {
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-    #radio8:checked~.first {
-        margin-left: -75%;
-        transition: 1s;
-    }
-
-
     .arboretologo {
         display: none;
     }
 
     .arboretologocelular {
-        margin-left: 10%;
         position: absolute;
     }
 }
-
-*/
-/*.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
+@media(min-width:1439px){
+    .slider {
+        margin: auto;
+        width: 1440px;       
+        height: 600px;      
+        overflow: hidden;
+    }
+    .slides input {
+        display: none;
+    }
+    .slides {
+        width: 400%;   
+        height: 600px; 
+        display: flex;
+    }
+    .slide {
+        width: 25%; 
+    }
+    .slide img {
+        width: 1440px; 
+        height: 600px;
+    }
+    .information h1 {
+        margin-top: 15%;    
+        text-align: left;
+        font-size: 45px;
+        line-height: 1.5em;
+    }
+    .information h2 {
+        color: darkgrey;
+        text-align: left;
+        font-size: 40px; 
+        line-height: 1.5em;
+    }
+    .quadradosorganizados {
+        margin-top: 10%; 
+        margin-bottom: 10%; 
+        width: 1440px;
+        height: 1400px; 
+        display: inline-block;
+        text-align: center;
+    }
+    .estudioimg,
+    .producaoimg,
+    .imglavabo,
+    .reuniaoimg {
+        text-align: center;
+        width: 515px;      
+        height: 515px;     
+        margin-right: 25%; 
+    }
+    .estudioimg img,
+    .producaoimg img,
+    .imglavabo img,
+    .saladereuniao img{
+        width: 515px; 
+        height: 515px;
+    }
+    .estudio label,
+    .saladereuniao label,
+    .saladeproducao label,
+    .lavabo label {
+        font-size: 30px; 
+        text-align: left;
+        margin-top: 15%;
+    }
+    .textimgarbo {
+        font-size: 40px;
+        width: 1200px;
+    }
+    .infoestudioarbo h1 {
+        text-align: left;
+        margin-top: 55%;
+        font-size: 30px;
+    }
+    .textostudioarboretto{
+        text-align: left;
+    }
+    .infoestudioarbo label {
+        margin-top: 10%;
+        text-align: left;
+        margin-left: 25%;
+        font-size: 35px; 
+    }
+    .imginfoarbo {
+        text-align: right;
+        margin-top: 10%;   
+        width: 430px;      
+        height:230px;     
+    }
+    .imginfoarbo img{
+        margin-top: 10%;        
+        width: 1440px;           
+        height: 800px;          
+    }
+    .filmagem {
+        margin-top: 15%;
+        width: 1440px;
+        height: 1440px;
+        background-image: url(../img/FILMAGEMGRANDE.png);
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .filmagem label{
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 1.5em;
+    }
+    .filmagem h2{
+        text-align: left;
+        font-size: 50px; 
+        color: white;
+        margin-top: 8%; 
+    }
+    .fotografia{
+        width: 1440px;
+        height: 1440px;
+        background-image: url(../img/FOTOGRAFIAGRANDE.png);
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .fotografia label{
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 1.5em;
+    }
+    .fotografia h2{
+        text-align: left;
+        font-size: 50px; 
+        color: white;
+        margin-top: 8%; 
+    }
+    .reunioescomerciais {
+        width: 1440px;
+        height: 1440px;
+        background-image: url(../img/REUNIAOGRANDE.png);
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .reunioescomerciais label {
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 1.5em;
+    }
+    .reunioescomerciais h2 {
+        text-align: left;
+        font-size: 50px; 
+        color: white;
+        margin-top: 8%;  
+    }
+    .filmagem button,
+    .fotografia button,
+    .reunioescomerciais button {
+    background: none;
+    height: 45px;
+    width: 250px;
+    border-radius: 25px;
+    border-color: white;
+    margin-top: 10%; 
+    color: white;
+    font-size: 25px;
+    }
+    .sobreestudio,
+    .sobresalareuniao {
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    margin-left: 5%; 
+    font-size: 32px; 
+    color: darkgrey;
+    line-height: 1.5em;
+    font-family: 'Forma DJR Deck' sans-serif;
+    }
+    .sobreestudio h2,
+    .sobresalareuniao h2 {
+    text-align: left;
+    font-size: 38px; 
+    color: black;
+    }
+    .sobreestudio button,
+    .sobresalareuniao button {
+    background: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    border-color: black;
+    font-size: 30px;
+    color: darkgrey;
+    margin-left: 5%;
+    margin-top: 10%; 
+    }
+    .especificacaoestudio {
+    line-height: 1.5em;
+    margin-left: 5%; 
+    }
+    .especificacaoestudio li {
+    line-height: 2em;
+    font-size: 30px; 
+    }
+    .especificacaoestudio h2 {
+    margin-top: 25%;
+    margin-left: 0%; 
+    color: black;
+    font-size: 45px;
+    }
+    .agendamentocombotao {
+    background-size: cover;
+    background-image:url(../img/facaseuagendamento.png);
+    width: 1440px; 
+    height: 1440px;
+    }
+    .agendamentocombotao button {
+    margin-top: 15%;
+    margin-left: 5%; 
+    background-color: #E5C167;
+    border: none;
+    font-size: 35px;
+    width: 500px;
+    height: 80px; 
+    border-radius: 35px; 
+    font-family: 'Forma DJR Banner', sans-serif;
+    color: white;
+    }
+    .agendamentocombotao h1 {
+    color: white;
+    margin-left: 5%;
+    margin-top: 25%;
+    font-size: 65px;
+    line-height: 1.5em;
+    font-family: 'Forma DJR Banner', sans-serif;
+    }
+    .final {
     display: flex;
+    color: black;
+    }
+    .final h2 {
+    font-size: 50px;
+    color: black;
+    }
+    .agendamento {
+    display: block;
+    text-align: left;
+    }
+    .agendamento label {
+    font-size: 25px;  
+    }
+    .endeco {
+    margin-left: 10%;
+    margin-right: 20%; /* Ajustado para a nova resolução */
+    }
+    .endeco h1 {
+    text-align: right;
+    }
+    .endeco label {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    font-size: 25px; 
+    display: block;
+    }
+    .logos {
+    display: block;
+    width: 1440px;
+    }
+    .paracelular{
+        display: none;
+    }
+    .logos img {
+    margin-left: 2.5%;  
+    margin-top: 2.5%;   
+    margin-bottom: 0.5%;
+    }
+    .caixabtn {
+    position: absolute;
+    right: 50px;         
+    bottom: 60px;     
+    }
+    .caixabtn button {
+    position: fixed;
+    border-radius: 24px; /* Ajustado para a nova resolução */
+    background-image: url(../img/IconeWhatsApp.png);
+    border: none;
+    object-fit: cover;
+    text-decoration: none;
+    width: 48px; /* Mantido */
+    height: 48px; /* Mantido */
+    }
+    .arboretologo {
+        display: block;
+        position: absolute;
+    }
+    .arboretologocelular {
+        display: none;
+    }
 }
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: flex;
-}
-
-.slide img{
-    width: 100%;
-    height: 100%;
-}
-
-/* .manual-navegation{
-    position: flex;
-    width: 800px;
-    margin-top: -30px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid #FFF;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: #FFF;
-} 
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-    transition: 1s;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-    transition: 1s;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-    transition: 1s;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-    transition: 1s;
-}
-/* Não sei se vai ser necessario*/
-/* .navegation-auto div{ 
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navegation-auto{
-    position: flex;
-    width: 800px;
-    margin-top: 370px;
-    display: flex;
-    justify-content: center;
-}
-
 .navegation-auto div:not(:last-child){
     margin-right: 40px;
 }
@@ -2018,4 +958,4 @@ body {
 
 #radio4:checked ~ .navegation-auto .auto-btn4{
     background-color: #FFF;
-} */
+}
