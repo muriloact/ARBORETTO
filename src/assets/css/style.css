@@ -9,6 +9,10 @@ body {
     display: inline-block;
 }
 
+*{
+    font-family: Forma DJR Deck;
+}
+
 @media(min-width:375px){
     .slider {
         margin: auto;
@@ -324,6 +328,7 @@ body {
             position: absolute;
     }
 }
+
 @media(min-width:430px){
     .slider {
         margin: auto;
@@ -636,6 +641,7 @@ body {
         position: absolute;
     }
 }
+
 @media(min-width:1439px){
     .slider {
         margin: auto;
@@ -643,33 +649,42 @@ body {
         height: 600px;      
         overflow: hidden;
     }
+
     .slides input {
         display: none;
     }
+
     .slides {
         width: 400%;   
         height: 600px; 
         display: flex;
     }
+
     .slide {
         width: 25%; 
     }
+
     .slide img {
         width: 1440px; 
         height: 600px;
     }
+
     .information h1 {
-        margin-top: 15%;    
         text-align: left;
-        font-size: 45px;
-        line-height: 1.5em;
+        font-size: 48px;
+        line-height: 57.6px;
+        font-family: 'Forma DJR Deck' sans-serif;
     }
+
     .information h2 {
+        margin-top: -2rem;
         color: darkgrey;
         text-align: left;
         font-size: 40px; 
-        line-height: 1.5em;
+        line-height: 48px;
+        font-family: 'Forma DJR Deck' sans-serif;
     }
+
     .quadradosorganizados {
         margin-top: 10%; 
         margin-bottom: 10%; 
@@ -678,6 +693,7 @@ body {
         display: inline-block;
         text-align: center;
     }
+
     .estudioimg,
     .producaoimg,
     .imglavabo,
@@ -702,39 +718,47 @@ body {
         text-align: left;
         margin-top: 15%;
     }
+
+    .TextandImage {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15rem;
+    }
     .textimgarbo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         font-size: 40px;
-        width: 1200px;
+        width: 100%;
     }
     .infoestudioarbo h1 {
         text-align: left;
-        margin-top: 55%;
-        font-size: 30px;
+        font-size: 48px;
+        line-height: 1.0em;
+        overflow: hidden;
+        width: 1040px;
+        
     }
     .textostudioarboretto{
-        text-align: left;
+        
+        overflow: hidden;
+        width: 30%;
     }
     .infoestudioarbo label {
-        margin-top: 10%;
         text-align: left;
-        margin-left: 25%;
         font-size: 35px; 
     }
+    
     .imginfoarbo {
-        text-align: right;
-        margin-top: 10%;   
-        width: 430px;      
-        height:230px;     
-    }
-    .imginfoarbo img{
-        margin-top: 10%;        
-        width: 1440px;           
-        height: 800px;          
+        width: 650px;      
+        height: 650px;     
     }
     .filmagem {
         margin-top: 15%;
         width: 1440px;
-        height: 1440px;
+        height: 1229px;
         background-image: url(../img/FILMAGEMGRANDE.png);
         /* background-repeat: no-repeat; */
         text-align: center;
@@ -745,17 +769,18 @@ body {
         font-size: 45px; 
         color: white;
         margin: 10px;
-        line-height: 1.5em;
+        line-height: 3.5rem;
     }
     .filmagem h2{
         text-align: left;
         font-size: 50px; 
+        padding-left: 8rem;
         color: white;
-        margin-top: 8%; 
+        margin-top: 2rem;
     }
     .fotografia{
         width: 1440px;
-        height: 1440px;
+        height: 1229px;
         background-image: url(../img/FOTOGRAFIAGRANDE.png);
         /* background-repeat: no-repeat; */
         text-align: center;
@@ -766,17 +791,19 @@ body {
         font-size: 45px; 
         color: white;
         margin: 10px;
-        line-height: 1.5em;
+        line-height: 3.5rem;
+        margin-top: 1rem;
     }
     .fotografia h2{
         text-align: left;
         font-size: 50px; 
-        color: white;
-        margin-top: 8%; 
+        color: white; 
+        padding-left: 7rem;
+        margin-top: 2rem;
     }
     .reunioescomerciais {
         width: 1440px;
-        height: 1440px;
+        height: 1229px;
         background-image: url(../img/REUNIAOGRANDE.png);
         /* background-repeat: no-repeat; */
         text-align: center;
@@ -787,26 +814,30 @@ body {
         font-size: 45px; 
         color: white;
         margin: 10px;
-        line-height: 1.5em;
+        line-height: 3.5rem;
+        margin-top: 2rem;
     }
     .reunioescomerciais h2 {
         text-align: left;
         font-size: 50px; 
         color: white;
         margin-top: 8%;  
+        padding-left: 9rem;
     }
+
     .filmagem button,
     .fotografia button,
     .reunioescomerciais button {
     background: none;
-    height: 45px;
-    width: 250px;
-    border-radius: 25px;
-    border-color: white;
+    height: 89px;
+    width: 350px;
+    border-radius: 81px;
+    border: 4px solid white;
     margin-top: 10%; 
     color: white;
     font-size: 25px;
     }
+
     .sobreestudio,
     .sobresalareuniao {
     display: block;
@@ -823,6 +854,7 @@ body {
     text-align: left;
     font-size: 38px; 
     color: black;
+    margin-top: 2rem;
     }
     .sobreestudio button,
     .sobresalareuniao button {
@@ -837,19 +869,23 @@ body {
     margin-top: 10%; 
     }
     .especificacaoestudio {
-    line-height: 1.5em;
+    line-height: 2rem;
     margin-left: 5%; 
+    margin-bottom: 20rem;
     }
     .especificacaoestudio li {
-    line-height: 2em;
-    font-size: 30px; 
+    line-height: 2rem;
+    font-size: 36px; 
+    font-style: oblique;
     }
+
     .especificacaoestudio h2 {
     margin-top: 25%;
     margin-left: 0%; 
     color: black;
     font-size: 45px;
     }
+
     .agendamentocombotao {
     background-size: cover;
     background-image:url(../img/facaseuagendamento.png);
@@ -879,6 +915,8 @@ body {
     .final {
     display: flex;
     color: black;
+
+    margin-top: 10rem;
     }
     .final h2 {
     font-size: 50px;
@@ -912,6 +950,7 @@ body {
     .paracelular{
         display: none;
     }
+
     .logos img {
     margin-left: 2.5%;  
     margin-top: 2.5%;   
@@ -940,6 +979,7 @@ body {
         display: none;
     }
 }
+
 .navegation-auto div:not(:last-child){
     margin-right: 40px;
 }
