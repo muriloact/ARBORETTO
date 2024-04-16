@@ -3,14 +3,10 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    di
+    
     align-items: center;
     justify-content: flex-start;
     font-family: 'Forma DJR Banner', sans-serif;
-}
-
-*{
-    font-family: 'Forma DJR Deck';
 }
 
 @media(min-width:375px){
@@ -48,6 +44,7 @@ body {
         margin-left: 15%; 
         font-size: 14px; 
         line-height: 1.5em;
+        margin-top: 1rem !important;
     }
     .quadradosorganizados {
         margin-top: 10%; 
@@ -99,6 +96,7 @@ body {
         margin-left: 1%;
         margin-top: 55%;
         font-size: 15px; 
+        width: 100% !important;
     }
     .infoestudioarbo label {
         margin-top: 10%;
@@ -112,6 +110,19 @@ body {
         width: 375px;      
         height: 178px;     
     }
+    
+    .textimgarbo {
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        
+    }
+    .TextandImage{
+        display: flex;
+        flex-direction: column !important; 
+        margin-left: 0 !important;
+    }
+
     .imginfoarbo img{
         text-align: right;
         margin-top: 10%;        
@@ -134,10 +145,13 @@ body {
         line-height: 1.5em;
     }
     .filmagem h2{
-        font-size: 20px; 
+        font-size: 15px; 
         margin-left: 32%;
         color: white;
         margin-top: 15%; 
+        margin-left: -4rem !important; 
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important; 
     }
     .fotografia{
         /* margin-top: 15%; */
@@ -158,7 +172,9 @@ body {
         font-size: 15px; 
         margin-left: 32%;
         color: white;
-        margin-top: 5%; 
+        margin-left: -4rem !important; 
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
     }
     .reunioescomerciais {
     width: 374.8px;
@@ -176,9 +192,9 @@ body {
     }
     .reunioescomerciais h2 {
     font-size: 20px; 
-    margin-left: 20%;
+    margin: 2rem !important;
     color: white;
-    margin-top: 15%; 
+    margin-left: -13rem !important; 
     }
     .filmagem button,
     .fotografia button,
@@ -403,16 +419,26 @@ body {
         text-align: left;
         margin-top: 15%;
     }
+
     .textimgarbo {
         text-align: center;
         font-size: 18px;
-        width: 430px;
+        width: 100%;
+
+    }
+
+    .TextandImage{
+        display: flex;
+        flex-direction: column !important; 
+        margin-left: 0 !important;
     }
     .infoestudioarbo h1 {
         text-align: left;
         margin-left: 1%;
         margin-top: 55%;
         font-size: 18px; 
+        line-height: 1.5em;
+        width: 100% !important;
     }
     .infoestudioarbo label {
         margin-top: 10%;
@@ -451,6 +477,8 @@ body {
         margin-left: 32%;
         color: white;
         margin-top: 8%; 
+        margin-left: -3rem 
+        !important;
     }
     .fotografia{
         /* margin-top: 15%; */
@@ -472,6 +500,8 @@ body {
         margin-left: 32%;
         color: white;
         margin-top: 5%; 
+        margin-left: -3rem 
+        !important;
     }
     .reunioescomerciais {
     width: 430px;
@@ -493,6 +523,9 @@ body {
     margin-left: 20%;
     color: white;
     margin-top: 5%; 
+    margin-left: -12rem
+        !important;
+    
     }
     .filmagem button,
     .fotografia button,
@@ -970,6 +1003,7 @@ body {
     text-decoration: none;
     width: 48px; /* Mantido */
     height: 48px; /* Mantido */
+    z-index: 9999;
     }
     .arboretologo {
         display: block;
@@ -979,6 +1013,7 @@ body {
         display: none;
     }
 }
+
 @media(max-width:1920px){
     .slider {
         margin: auto;
