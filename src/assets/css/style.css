@@ -1,16 +1,16 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    di
     align-items: center;
     justify-content: flex-start;
     font-family: 'Forma DJR Banner', sans-serif;
-    display: inline-block;
 }
 
 *{
-    font-family: Forma DJR Deck;
+    font-family: 'Forma DJR Deck';
 }
 
 @media(min-width:375px){
@@ -25,7 +25,7 @@ body {
     }
     .slides {
         width: 400%;   
-        height: 213px; 
+        height: 213px;
         display: flex;
     }
     .slide {
@@ -971,6 +971,440 @@ body {
     width: 48px; /* Mantido */
     height: 48px; /* Mantido */
     }
+    .arboretologo {
+        display: block;
+        position: absolute;
+    }
+    .arboretologocelular {
+        display: none;
+    }
+}
+@media(max-width:1920px){
+    .slider {
+        margin: auto;
+        width: 1920px;       
+        height: 600px;      
+        overflow: hidden;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slides {
+        width: 400%;   
+        height: 600px; 
+        display: flex;
+    }
+
+    .slide {
+        width: 25%; 
+    }
+
+    .slide img {
+        width: 1440px; 
+        height: 600px;
+    }
+
+    .information h1 {
+        text-align: left;
+        font-size: 48px;
+        line-height: 57.6px;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+
+    .information h2 {
+        margin-top: -2rem;
+        color: darkgrey;
+        text-align: left;
+        font-size: 40px; 
+        line-height: 48px;
+        font-family: 'Forma DJR Deck' sans-serif;
+        margin-bottom: 7rem;
+    }
+
+    .quadradosorganizados {
+        margin-top: 10%; 
+        margin-bottom: 10%; 
+        width: 1920px;
+        height: 1400px; 
+        display: inline-block;
+        text-align: center;
+    }
+
+    .estudioimg,
+    .producaoimg,
+    .imglavabo,
+    .reuniaoimg {
+        text-align: center;
+        width: 650px;      
+        height: 650px;     
+        margin-right: 25%; 
+    }
+
+    .estudioimg img,
+    .producaoimg img,
+    .imglavabo img,
+    .saladereuniao img{
+        width: 650px; 
+        height: 650px;
+    }
+
+
+    .estudio label,
+    .saladereuniao label,
+    .saladeproducao label,
+    .lavabo label {
+        font-size: 30px; 
+        text-align: left;
+        margin-top: 15%;
+    }
+
+    .textimgarbo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 40px;
+    }
+
+    .TextandImage {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15rem;        
+    }
+
+    .infoestudioarbo h1 {
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.0em;
+        overflow: hidden;
+        width: 1500px;
+        margin-top: 10rem;
+    }
+    .textostudioarboretto{
+        
+        overflow: hidden;
+        width: 50%;
+    }
+    .infoestudioarbo label {
+        text-align: left;
+        font-size: 50px; 
+        margin-left: -1rem;
+        margin-right: 5rem;
+    }
+    
+    .imginfoarbo {
+        width: 1020px;      
+        height: 1020px;     
+    }
+    .filmagem {
+        position: relative;
+        margin-top: 15%;
+        width: 100vw;
+        height: 1229px;
+        /* background-image: url(../img/FILMAGEMGRANDE.png); */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+        z-index: 100;
+    }
+    .filmagem img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: center center no-repeat;
+        object-fit: cover;
+        z-index: -100;
+    }
+    .filmagem label{
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 3.5rem;
+    }
+    .filmagem h2{
+        text-align: left;
+        font-size: 50px; 
+        padding-left: 13rem;
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+    }
+    .fotografia{
+        width: 1440px;
+        height: 1229px;
+        background-image: url(../img/FOTOGRAFIAGRANDE.png);
+        /* background-repeat: no-repeat; */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+    }
+
+    .fotografia {
+        position: relative;
+        
+        /* margin-top: 15%; */
+        width: 100vw;
+        height: 1229px;
+        /* background-image: url(../img/FILMAGEMGRANDE.png); */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+        z-index: 100;
+    }
+    .fotografia img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: center center no-repeat;
+        object-fit: cover;
+        z-index: -100;
+    }
+
+
+    .fotografia label{
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 3.5rem;
+        margin-top: 1rem;
+    }
+    .fotografia h2{
+        text-align: left;
+        font-size: 50px; 
+        color: white; 
+        padding-left: 13rem;
+        margin-top: 2rem;
+    }
+    
+    .reunioescomerciais {
+        position: relative;
+        
+        /* margin-top: 15%; */
+        width: 100vw;
+        height: 1229px;
+        /* background-image: url(../img/FILMAGEMGRANDE.png); */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+        z-index: 100;
+    }
+    .reunioescomerciais img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: center center no-repeat;
+        object-fit: cover;
+        z-index: -100;
+    }
+
+    .reunioescomerciais label {
+        font-size: 45px; 
+        color: white;
+        margin: 10px;
+        line-height: 3.5rem;
+        margin-top: rem;
+    }
+    .reunioescomerciais h2 {
+        text-align: left;
+        font-size: 50px; 
+        color: white;
+        margin-top: 8%; 
+        margin-bottom: 7rem;
+        padding-left: 18rem;
+    }
+
+    .filmagem button,
+    .fotografia button,
+    .reunioescomerciais button {
+    background: none;
+    height: 89px;
+    width: 350px;
+    border-radius: 81px;
+    border: 4px solid white;
+    margin-top: 10%; 
+    color: white;
+    font-size: 25px;
+    }
+
+    .sobreestudio,
+    .sobresalareuniao {
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    margin-left: 5%; 
+    font-size: 32px; 
+    color: darkgrey;
+    line-height: 1.5em;
+    font-family: 'Forma DJR Deck' sans-serif;
+    }
+    
+    .sobreestudio h2,
+    .sobresalareuniao h2 {
+    text-align: left;
+    font-size: 70px; 
+    color: black;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    }
+    .sobreestudio button,
+    .sobresalareuniao button {
+    background: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+    border-color: black;
+    font-size: 30px;
+    color: darkgrey;
+    margin-left: 5%;
+    margin-top: 10%; 
+    }
+    .especificacaoestudio {
+    line-height: 2rem;
+    margin-left: 5%; 
+    margin-bottom: 20rem;
+    }
+    .especificacaoestudio li {
+    line-height: 2rem;
+    font-size: 36px; 
+    font-style: oblique;
+    }
+
+    .especificacaoestudio h2 {
+    margin-top: 25%;
+    margin-left: 0%; 
+    color: black;
+    font-size: 50px;
+    }
+
+    .agendamentocombotao {
+    background-size: cover;
+    background-image:url(../img/facaseuagendamento.png);
+    width: 1440px; 
+    height: 1440px;
+    }
+
+    .agendamentocombotao {
+        position: relative;
+        
+        /* margin-top: 15%; */
+        width: 100vw;
+        height: 1229px;
+        /* background-image: url(../img/FILMAGEMGRANDE.png); */
+        text-align: center;
+        object-fit: cover;
+        font-family: 'Forma DJR Deck' sans-serif;
+        z-index: 100;
+    }
+    .agendamentocombotao img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: center center no-repeat;
+        object-fit: cover;
+        z-index: -100;
+    }
+
+    .agendamentocombotao button {
+    margin-top: 15%;
+    margin-left: 5%; 
+    background-color: #E5C167;
+    border: none;
+    font-size: 35px;
+    width: 500px;
+    height: 80px; 
+    border-radius: 35px; 
+    font-family: 'Forma DJR Banner', sans-serif;
+    color: white;
+    margin-bottom: 10rem;
+    }
+
+    .agendamentocombotao h1 {
+    color: white;
+    margin-left: 5%;
+    margin-top: 25%;
+    font-size: 65px;
+    line-height: 1.5em;
+    font-family: 'Forma DJR Banner', sans-serif;
+    }
+    .final {
+    display: flex;
+    color: black;
+
+    margin-top: 10rem;
+    }
+    .final h2 {
+    font-size: 50px;
+    color: black;
+    }
+    .agendamento {
+    display: block;
+    text-align: left;
+    }
+    .agendamento label {
+    font-size: 25px;  
+    }
+    .endeco {
+    margin-left: 10%;
+    margin-right: 20%; /* Ajustado para a nova resolução */
+    }
+    .endeco h1 {
+    text-align: right;
+    }
+    .endeco label {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    font-size: 25px; 
+    display: block;
+    }
+    .logos {
+    display: block;
+    width: 1440px;
+    }
+    .paracelular{
+        display: none;
+    }
+
+    .logos img {
+    margin-left: 2.5%;  
+    margin-top: 2.5%;   
+    margin-bottom: 0.5%;
+    }
+
+
+    .caixabtn {
+    position: absolute;
+    right: 120px;         
+    bottom: 120px;     
+    }
+    .caixabtn button {
+    position: fixed;
+    border-radius: 24px; /* Ajustado para a nova resolução */
+    background-image: url(../img/IconeWhatsApp.png);
+    background-size: cover;
+    border: none;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    width: 100px; /* Mantido */
+    height: 100px; /* Mantido */
+    }
+
+
+
     .arboretologo {
         display: block;
         position: absolute;
