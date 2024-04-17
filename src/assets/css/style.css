@@ -10,6 +10,7 @@ body {
 }
 
 @media(min-width:375px){
+
     .slider {
         margin: auto;
         width: 375px;       
